@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace TPFormes
 {
-    public class Cercle
+    public class Cercle : Forme
     {
-        public Cercle(Point origine, int rayon)
+        public Cercle(Point origine, int rayon) : base(origine)
         {
             Origine = origine;
             Rayon = rayon;
         }
 
-        public Point Origine { get; set; }
+        
         public int Rayon { get; set; }
 
-        public double Perimetre()
+        public override double Perimetre()
         {
             return Math.PI * Rayon * 2;
         }
 
-        public double Aire()
+        public override double Aire()
         {
             return Math.PI * Rayon * Rayon;
         }
