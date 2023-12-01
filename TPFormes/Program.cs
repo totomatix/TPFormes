@@ -44,3 +44,14 @@ foreach (Forme forme in formes)
 {
     Console.WriteLine(forme);
 }
+
+//etape 4
+Console.WriteLine("Etape 4:");
+
+formes.Add(new Carre(P0, 5));
+formes.Add(new Carre(P1, 78));
+
+foreach (Forme forme in formes)
+{
+    Console.WriteLine(forme);
+}
