@@ -55,3 +55,21 @@ foreach (Forme forme in formes)
 {
     Console.WriteLine(forme);
 }
+
+//etape 5
+Console.WriteLine("Etape 5:");
+// pour tester CompareTo()
+//Console.WriteLine(formes[0].CompareTo(formes[1]));
+//Console.WriteLine(formes[1].CompareTo(formes[0]));
+Console.WriteLine("Avant le tri : ");
+foreach (Forme forme in formes)
+{
+    Console.WriteLine(forme);
+}
+Console.WriteLine("Après le tri : ");
+formes.Sort();
+formes.Reverse();
+foreach (Forme forme in formes)
+{
+    Console.WriteLine(forme);
+}
